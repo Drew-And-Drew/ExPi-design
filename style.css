@@ -6,7 +6,7 @@
     display:grid;
     grid-template-areas: 
     "header header header header header"
-    "article article article aside aside"
+    "article article article article aside"
     "footer footer footer footer footer";
 }
 
