@@ -5,9 +5,9 @@
 .container{
     display:grid;
     grid-template-areas: 
-    "header header header header header"
-    "article article article article aside"
-    "footer footer footer footer footer";
+    "header"
+    "article"
+    "footer";
 }
 
 /*-----------------------------------------------*/
@@ -25,14 +25,14 @@ header{
 
 }
 
-header img{
+.hdr-logo img{
     
-    transform: scale(0.4);
+    transform: scale(0.35);
     position: relative;
     top: -67px;
-    left: -125px;
+    left: -145px;
 
-    filter: drop-shadow(7px 7px 10px gray);
+    filter: drop-shadow(10px 10px 12px #272727);
 }
 
 
@@ -40,8 +40,10 @@ header img{
 
 nav{
     background: #005b81;
-
+    
+    display: flex;
     justify-content: center;
+
     min-width: 84%;
     height: 50px;
 
@@ -53,18 +55,18 @@ nav{
     left: -10px;
 
 }
+
 ul{
      list-style-type: none;
      margin: 0;
      padding: 0;
 
 }
-
 .nav-item{
 
     text-align: center;
-    box-sizing: border-box;
     display: inline-block;
+    box-sizing: border-box;
     margin: 0;
 }
 .nav-link{
@@ -82,6 +84,7 @@ ul{
     box-sizing: border-box;
 
 }
+
 
 .nav-link:hover{
     background: #0078a1;
@@ -102,19 +105,15 @@ article{
     width: 100%;
     grid-area: article;
 }
-aside{
-    background: #c6c6c6;
-    height: 80vh;
-    width: 100%;
-    grid-area: aside;
-}
+
+
+/*-----------------------------------------------*/
+
+
 footer{
     background: #82368c;
-    height: 15vh;
+    height: 50vh;
     width: 100%;
     grid-area: footer;
 }
 
-@media screen and (max-width: 947px){
-
-}
