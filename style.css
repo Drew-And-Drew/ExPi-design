@@ -2,6 +2,11 @@
     font-family: 'Roboto Mono', monospace;
     scroll-behavior: smooth;
 }
+body{
+    margin: 0;
+    background: #dadada;
+}
+
 .container{
     display:grid;
     grid-template-areas: 
@@ -14,7 +19,6 @@
 
 
 header{
-    background: #c6c6c6;
     height: 15vh;
     width: 100%;
 
@@ -23,6 +27,16 @@ header{
     display: flex;
     flex-wrap: wrap;
 
+    padding-bottom:5px;
+    background:
+    linear-gradient(
+      to bottom, 
+      #c6c6c6 80%,
+      #dadada 99%
+        ) 
+    bottom
+    no-repeat; 
+
 }
 
 .hdr-logo img{
@@ -30,9 +44,9 @@ header{
     transform: scale(0.35);
     position: relative;
     top: -67px;
-    left: -145px;
+    left: -120px;
 
-    filter: drop-shadow(10px 10px 12px #272727);
+    filter: drop-shadow(7px 7px 12px #454545);
 }
 
 
