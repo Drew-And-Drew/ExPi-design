@@ -47,11 +47,20 @@ header{
     left: -120px;
 
     filter: drop-shadow(7px 7px 12px #454545);
+
+    position: fixed;
+    z-index: 110;
 }
 
 .hdr-logo img:hover{
+    transform: scale(0.37);
+    transition: initial;
+    transition-duration: 0.1s;
+}
+
+.hdr-logo img:active{
     animation-name: home;
-    animation-duration: 0.3s;
+    animation-duration: 0.2s;
 }
 
 
@@ -73,7 +82,7 @@ nav{
 
     position: fixed;
     left: -10px;
-
+    z-index: 100;
 }
 
 ul{
@@ -108,8 +117,8 @@ ul{
 
 .nav-link:hover{
     background: #0078a1;
-    transition-property: background;
-    transition-duration: 0.5s;
+    transition-property:initial;
+    transition-duration: 0.15s;
 }
 .nav-link:active{
     background: #78ddff;
@@ -118,12 +127,41 @@ ul{
 
 /*-----------------------------------------------*/
 
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 450;
+    font-size: 50px;
+    text-align:center;
+}
 
 article{
-    background: #dadada;
-    height: 100vh;
-    width: 100%;
+    background: #ffff;
+    height: 200vh;
+    width: 95%;
     grid-area: article;
+    margin: 20px auto;
+    filter: drop-shadow(6px 6px 12px #666666);
+    z-index: 20;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+
+.fondo{
+    background-image: url("3.jpg");
+    background-size: cover;
+
+    display:flex;
+    flex-grow: 1;
+    height: 400px;
+    border-radius: 25px;
+    
+    justify-content: right;
+    align-items: center;
+    font-size: 50px;
+    color: #dadada;
+    
 }
 
 
@@ -162,6 +200,8 @@ footer{
 }
 
 .foot-item a:hover{
+    transition: initial;
+    transition-duration: 0.2s;
     color: #1F0020;
 }
 
@@ -199,7 +239,7 @@ footer{
     }
 
     50%{
-        transform: scale(0.32);
+        transform: scale(0.34);
         position: relative;
         top: -67px;
         left: -120px;
