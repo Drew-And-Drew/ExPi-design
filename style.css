@@ -134,9 +134,25 @@ h1{
     text-align:center;
 }
 
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 450;
+    font-size: 35px;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    display: inline-block;
+}
+
+
+
 article{
     background: #ffff;
-    height: 200vh;
+    height: 525vh;
     width: 95%;
     grid-area: article;
     margin: 20px auto;
@@ -144,6 +160,13 @@ article{
     z-index: 20;
     padding: 40px;
     box-sizing: border-box;
+}
+
+article p{
+    padding: 20px 40px 20px 40px;
+    font-size: 20px;
+    line-height: 30px;
+
 }
 
 
@@ -162,6 +185,69 @@ article{
     font-size: 50px;
     color: #dadada;
     
+}
+
+#intro{
+    margin-bottom: 60px;
+}
+
+.servicios{
+    
+     
+
+    display: flex;
+    
+    padding: 20px;
+    
+    margin: -40px;
+
+    
+}
+
+.servicios-p{
+    margin-top:-40px;
+}
+
+.serv-1{
+    background: #ffff;
+}
+
+.serv-2{
+    background: #dadada;
+}
+
+.servcont-1{
+    flex-grow: 1;
+    min-width: 60%;
+}
+
+.servcont-2{
+    flex-grow: 1;
+    min-width: 40%;
+
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.servcont-2 a{
+    color:#82368c;
+}
+
+.servcont-2 a:hover{
+    color:#82368CC4;
+    font-size: 50px;
+
+    transition-property: initial;
+    transition-duration: 0.3s;
+}
+
+.servcont-2-img{
+    background:#666666;
+
+    width: 350px;
+    height: 200px;
 }
 
 
